@@ -44,12 +44,12 @@ const checkAdjacent = (row1, row2, col1, col2) => {
 
 //Fill array with random value for images
 const randomImages = () => {
-    let test = 1;
+
     while (imagesArr.length < 24) {
         let randomVal = randomNumber();
-        if (!imagesArr.includes(test)) {
-            imagesArr.push(test);
-            test++;
+        if (!imagesArr.includes(randomVal)) {
+            imagesArr.push(randomVal);
+
             console.log(imagesArr)
         }
     }
