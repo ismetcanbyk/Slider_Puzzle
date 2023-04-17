@@ -17,7 +17,7 @@ const isTouchDevice = () => {
     }
 };
 //Random number for image
-const randomNumber = () => Math.floor(Math.random() * 24) + 1;
+const randomNumber = () => Math.floor(Math.random() * 15) + 1;
 
 
 //Get row and column value from data-position
@@ -45,7 +45,7 @@ const checkAdjacent = (row1, row2, col1, col2) => {
 //Fill array with random value for images
 const randomImages = () => {
 
-    while (imagesArr.length < 24) {
+    while (imagesArr.length < 15) {
         let randomVal = randomNumber();
         if (!imagesArr.includes(randomVal)) {
             imagesArr.push(randomVal);
@@ -53,20 +53,20 @@ const randomImages = () => {
             console.log(imagesArr)
         }
     }
-    imagesArr.push(25);
+    imagesArr.push(16);
 };
 
 //Generate Grid
 const gridGenerator = () => {
     let count = 0;
-    for (let i = 0; i < 5; i++) {
-        for (let j = 0; j < 5; j++) {
+    for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
             let div = document.createElement("div");
             div.setAttribute("data-position", `${i}_${j}`);
             div.addEventListener("click", selectImage);
-            div.classList.add("image-container");
-            div.innerHTML = `<img src="./hard/dexter${imagesArr[count]
-                }.png" class="image ${imagesArr[count] == 25 ? "target" : ""
+            div.classList.add("image-container-medium");
+            div.innerHTML = `<img src="../assets/medium/dexter${imagesArr[count]
+                }.png" class="image ${imagesArr[count] == 16 ? "target" : ""
                 }" data-index="${imagesArr[count]}"/>`;
             count += 1;
             container.appendChild(div);
@@ -111,7 +111,7 @@ const selectImage = (e) => {
 
 
         //Win condition
-        if (imagesArr.join("") == "12345678910111213141516171819202122232425") {
+        if (imagesArr.join("") == "12345678910111213141516") {
             setTimeout(() => {
                 //When games ends display the cover screen again
                 coverScreen.classList.remove("hide");
