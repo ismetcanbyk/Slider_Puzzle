@@ -2,7 +2,7 @@
 
 ### Yazılım yapımı ödevi 
 
-<br><br>
+<br>
 
 ### Ana Sayfa
 
@@ -12,22 +12,22 @@
 
 ### Basic Level
 
-<img src='screenShots/SliderPuzzleBasic.PNG'>
+<img src='screenShots/sliderPuzzleBasic.PNG'>
 
 <br>
 
 ### Medium Level
 
-<img src='screenShots/SliderPuzzleMedium.PNG'>
+<img src='screenShots/sliderPuzzleMedium.PNG'>
 
 <br>
 
 ### Hard Level
 
-<img src='screenShots/SliderPuzzleHard.PNG'>
+<img src='screenShots/sliderPuzzleHard.PNG'>
 
 <br>
 
 ### Impossible Level
 
-<img src='screenShots/SliderPuzzleImpossible.PNG'>
+<img src='screenShots/sliderPuzzleImpossible.PNG'>
