@@ -126,23 +126,7 @@ const selectImage = (e) => {
     }
 };
 
-//Start button click should display the container
-// window.addEventListener("load", () => {
-//     container.classList.remove("hide");
-//     coverScreen.classList.add("hide");
-//     container.innerHTML = "";
-//     imagesArr = [];
-//     randomImages();
-//     gridGenerator();
-//     movesCount = 0;
-//     moves.innerText = `Moves: ${movesCount}`;
-// });
 
-//Display start screen first
-// window.onload = () => {
-//     coverScreen.classList.remove("hide");
-//     container.classList.add("hide");
-// };
 
 window.onload = () => {
     container.classList.remove("hide");

@@ -56,8 +56,8 @@ img {
 #start-button {
     font-size: 1.2em;
     padding: 0.8em 2em;
-    border: none;
-    border-radius: 3em;
+    border: 3px solid #83a598;
+    border-radius: 113em;
     cursor: pointer;
     margin-top: 15px;
 }
@@ -65,9 +65,11 @@ img {
 
 
 #moves {
+    padding: 10px;
+    border-radius: 100%;
     position: relative;
     margin: 1em;
-    text-align: right;
+    text-align: center;
 }
 
 .hide {

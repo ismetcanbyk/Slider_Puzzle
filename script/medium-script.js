@@ -44,12 +44,10 @@ const checkAdjacent = (row1, row2, col1, col2) => {
 
 //Fill array with random value for images
 const randomImages = () => {
-
     while (imagesArr.length < 15) {
         let randomVal = randomNumber();
         if (!imagesArr.includes(randomVal)) {
             imagesArr.push(randomVal);
-
             console.log(imagesArr)
         }
     }
@@ -117,7 +115,7 @@ const selectImage = (e) => {
                 coverScreen.classList.remove("hide");
                 container.classList.add("hide");
                 alert("YOU WON!")
-                result.innerText = `Total Moves: ${movesCount}`;
+
                 startButton.innerText = "RestartGame";
             }, 1000);
         }
@@ -127,23 +125,6 @@ const selectImage = (e) => {
     }
 };
 
-//Start button click should display the container
-// window.addEventListener("load", () => {
-//     container.classList.remove("hide");
-//     coverScreen.classList.add("hide");
-//     container.innerHTML = "";
-//     imagesArr = [];
-//     randomImages();
-//     gridGenerator();
-//     movesCount = 0;
-//     moves.innerText = `Moves: ${movesCount}`;
-// });
-
-//Display start screen first
-// window.onload = () => {
-//     coverScreen.classList.remove("hide");
-//     container.classList.add("hide");
-// };
 
 window.onload = () => {
     container.classList.remove("hide");

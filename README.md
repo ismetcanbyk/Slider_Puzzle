@@ -31,3 +31,13 @@
 ### Impossible Level
 
 <img src='screenShots/sliderPuzzleImpossible.PNG'>
+
+<br>
+
+### Win Page
+
+<img src='screenShots/sliderPuzzleWin.PNG'>
+
+<br>
+
+<img src='screenShots/sliderPuzzleWinPage.PNG'>
